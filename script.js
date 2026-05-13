@@ -35,11 +35,16 @@ if (!isTouchDevice) {
     });
 }
 
-// === Marquee contact cards on mobile ===
+// === Marquee contact/skills cards on mobile ===
 if (isTouchDevice) {
-    const track = document.getElementById('contactTrack');
-    if (track) {
-        track.innerHTML += track.innerHTML;
+    const contactTrack = document.getElementById('contactTrack');
+    if (contactTrack) {
+        contactTrack.innerHTML += contactTrack.innerHTML;
+    }
+    const skillsContainer = document.getElementById('skillsContainer');
+    if (skillsContainer) {
+        skillsContainer.classList.add('marquee');
+        skillsContainer.innerHTML += skillsContainer.innerHTML;
     }
 }
 
@@ -157,7 +162,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.project-card, .skill-item').forEach(el => {
+document.querySelectorAll('.project-card, .skill-item, .service-card').forEach(el => {
     observer.observe(el);
 });
 
