@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css?v=32">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav>
+        <div class="nav-glow"></div>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">Меню</span>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M2 2l14 14M16 2L2 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="side-menu-links">
+            <li><a href="#hero" class="menu-link">Главная</a></li>
+            <li><a href="#about" class="menu-link">Обо мне</a></li>
+            <li><a href="#projects" class="menu-link">Проекты</a></li>
+            <li><a href="#skills" class="menu-link">Навыки</a></li>
+            <li><a href="#contact" class="menu-link">Контакты</a></li>
+        </ul>
+        <div class="side-menu-footer">
+            <p>Свяжитесь со мной</p>
+            <div class="social-icons">
+                <a href="https://github.com/EgorRiznyk" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://t.me/egor_riznyk" target="_blank" class="social-icon">Telegram</a>
+                <a href="mailto:egor.riznykhh@gmail.com" class="social-icon">Email</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-mesh"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="noise-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Веб-разработчик</div>
+            <h1 class="hero-title">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <span class="line line-1">Создаю</span>
+                <span class="line line-2"><span class="gradient-text">цифровые шедевры</span></span>
+            </h1>
+            <p class="hero-desc">Превращаю идеи в современные, быстрые и красивые веб-приложения</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    Смотреть работы
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 2v10M8 12l4-4M8 12l-4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Прокрутите вниз</span>
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+                <path d="M8 2v16M8 18l6-6M8 18l-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" width="100%" height="80">
+            <defs>
+                <linearGradient id="dividerGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(10,10,10,0)"/>
+                    <stop offset="100%" stop-color="rgba(15,10,26,1)"/>
+                </linearGradient>
+            </defs>
+            <path d="M0,0 C360,40 720,0 1440,30 L1440,80 L0,80 Z" fill="url(#dividerGrad)"/>
+        </svg>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-tabs">
+                <div class="about-tab-links">
+                    <button class="about-tab-btn active" data-tab="bio">Био</button>
+                    <button class="about-tab-btn" data-tab="goal">Цели</button>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-tab-content active" id="tab-bio">
+                    <div class="about-text">
+                        <div class="about-hero">
+                            <div class="about-avatar">
+                            <img src="img/photo_2026-04-20_12-24-00.jpg" alt="Егор" class="about-photo">
+                        </div>
+                            <div class="about-info">
+                                <h3 class="about-name">Егор</h3>
+                                <p class="about-age">19 лет</p>
+                                <div class="about-roles">
+                                    <span class="about-role">Web Developer</span>
+                                    <span class="about-role">Content Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Занимаюсь веб-разработкой и управлением контентом. Мне нравится превращать сложные задачи в простые и понятные решения. Слежу за чистотой кода, исправляю ошибки и постоянно улучшаю проекты, с которыми работаю.</p>
+                        <p>Верю, что хороший сайт - это не только красивый дизайн, но и надёжность, скорость и удобство для пользователя. Всегда открыт к новым идеям и интересным задачам.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="11">0</span>
+                            <span class="stat-label">Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="19">0</span>
+                            <span class="stat-label">Технологий</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Года опыта</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tab-content" id="tab-goal">
+                    <div class="about-text">
+                        <p>Моя цель - стать высококлассным full-stack разработчиком, создавать продукты, которые приносят пользу людям.</p>
+                        <p>В ближайшее время планирую углубиться в бэкенд-разработку и изучить современные фреймворки, чтобы стать более универсальным специалистом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card" style="--i:0">
+                    <div class="project-card-bg">
+                        <svg class="project-illustration" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 90h160l-12-40H32l-12 40z" fill="currentColor" opacity="0.06"/>
+                            <circle cx="55" cy="90" r="12" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                            <circle cx="145" cy="90" r="12" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                            <path d="M35 50l25-20h80l25 20" stroke="currentColor" stroke-width="2" opacity="0.12" fill="none"/>
+                            <rect x="40" y="50" width="120" height="28" rx="4" fill="currentColor" opacity="0.04"/>
+                            <rect x="60" y="56" width="20" height="6" rx="2" fill="currentColor" opacity="0.08"/>
+                            <rect x="90" y="56" width="20" height="6" rx="2" fill="currentColor" opacity="0.08"/>
+                            <rect x="120" y="56" width="20" height="6" rx="2" fill="currentColor" opacity="0.08"/>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">HTML • CSS • JS</span>
+                        <h3>DrivePMR</h3>
+                        <p>Платформа для продажи автомобилей в Приднестровье. Удобный каталог, фильтрация по марке и цене, форма обратной связи.</p>
+                        <a href="javascript:void(0)" class="project-link" data-project="0">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="project-card" style="--i:1">
+                    <div class="project-card-bg">
+                        <svg class="project-illustration" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="50" r="30" fill="currentColor" opacity="0.04"/>
+                            <circle cx="100" cy="50" r="20" fill="currentColor" opacity="0.06"/>
+                            <circle cx="100" cy="50" r="10" fill="currentColor" opacity="0.1"/>
+                            <path d="M100 5v10M100 85v10M45 50H35M165 50h10M55 25l-7-7M152 25l7-7M55 75l-7 7M152 75l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.08"/>
+                            <path d="M30 95c20-15 50-15 70 0s50-15 70 0" stroke="currentColor" stroke-width="1.5" opacity="0.06" fill="none"/>
+                            <circle cx="30" cy="88" r="4" fill="currentColor" opacity="0.08"/>
+                            <circle cx="170" cy="88" r="4" fill="currentColor" opacity="0.08"/>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">HTML • CSS • JS</span>
+                        <h3>Погода</h3>
+                        <p>Веб-приложение с интеграцией API погоды. Отображает текущую температуру, влажность, скорость ветра и прогноз на неделю.</p>
+                        <a href="javascript:void(0)" class="project-link" data-project="1">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="project-card" style="--i:2">
+                    <div class="project-card-bg">
+                        <svg class="project-illustration" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="50" r="5" fill="currentColor" opacity="0.1"/>
+                            <path d="M100 50l15-25M100 50l-15-25M100 50l25 10M100 50l-25 10M100 50l25-10M100 50l-25-10M100 50l15 25M100 50l-15 25" stroke="currentColor" stroke-width="1.5" opacity="0.08" stroke-linecap="round"/>
+                            <circle cx="100" cy="50" r="20" stroke="currentColor" stroke-width="1" opacity="0.06" stroke-dasharray="4 4"/>
+                            <rect x="75" y="80" width="50" height="25" rx="3" fill="currentColor" opacity="0.04"/>
+                            <rect x="85" y="88" width="30" height="4" rx="2" fill="currentColor" opacity="0.08"/>
+                            <rect x="88" y="78" width="24" height="5" rx="2" fill="currentColor" opacity="0.06"/>
+                            <circle cx="50" cy="55" r="3" fill="currentColor" opacity="0.06"/>
+                            <circle cx="150" cy="55" r="3" fill="currentColor" opacity="0.06"/>
+                            <circle cx="60" cy="30" r="2" fill="currentColor" opacity="0.06"/>
+                            <circle cx="140" cy="30" r="2" fill="currentColor" opacity="0.06"/>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">HTML • CSS • JS</span>
+                        <h3>HolyDays</h3>
+                        <p>Сервис для оформления праздников. Генератор приглашений, таймер обратного отсчёта, галерея идей и календарь событий.</p>
+                        <a href="javascript:void(0)" class="project-link" data-project="2">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+            <div class="skills-container">
+                <div class="skill-item" style="--i:0">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 16 16" fill="currentColor" width="24" height="24">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </div>
+                    <span>GitHub</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                </div>
+                <div class="skill-item" style="--i:1">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 40 40" width="24" height="24">
+                            <rect width="40" height="40" rx="8" fill="#3178c6"/>
+                            <text x="20" y="27" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="18" font-weight="bold">TS</text>
+                        </svg>
+                    </div>
+                    <span>TypeScript</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                </div>
+                <div class="skill-item" style="--i:2">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 40 40" width="24" height="24">
+                            <rect width="40" height="40" rx="8" fill="#f7df1e"/>
+                            <text x="20" y="27" text-anchor="middle" fill="#000" font-family="sans-serif" font-size="16" font-weight="bold">JS</text>
+                        </svg>
+                    </div>
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                </div>
+                <div class="skill-item" style="--i:3">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 40 40" width="24" height="24">
+                            <rect width="40" height="40" rx="8" fill="#1572b6"/>
+                            <text x="20" y="27" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold">CSS</text>
+                        </svg>
+                    </div>
+                    <span>CSS</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                </div>
+                <div class="skill-item" style="--i:4">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 38 57" width="20" height="30">
+                            <rect x="2" y="2" width="16" height="16" rx="4" fill="currentColor"/>
+                            <rect x="20" y="2" width="16" height="16" rx="4" fill="currentColor" opacity="0.35"/>
+                            <rect x="2" y="20" width="16" height="16" rx="4" fill="currentColor" opacity="0.55"/>
+                            <rect x="2" y="38" width="16" height="16" rx="4" fill="currentColor" opacity="0.75"/>
+                        </svg>
+                    </div>
+                    <span>Figma</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                </div>
+                <div class="skill-item" style="--i:5">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 40 40" width="24" height="24">
+                            <rect width="40" height="40" rx="8" fill="#e34f26"/>
+                            <text x="20" y="27" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold">HTML</text>
+                        </svg>
+                    </div>
+                    <span>HTML</span>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-content">
+                <p class="contact-text">Готов к интересным проектам и сотрудничеству</p>
+                <a href="mailto:egor.riznykhh@gmail.com" class="contact-email">egor.riznykhh@gmail.com</a>
+                <div class="contact-socials">
+                    <div class="contact-track" id="contactTrack">
+                        <a href="https://github.com/EgorRiznyk" target="_blank" class="contact-social-link">
+                            <svg viewBox="0 0 16 16" fill="currentColor" width="22" height="22">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://t.me/egor_riznyk" target="_blank" class="contact-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                                <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://instagram.com/egor_riznyik" target="_blank" class="contact-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portfolio. Все права защищены</p>
+        </div>
+    </footer>
+
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-backdrop"></div>
+        <button class="gallery-close" id="galleryClose">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 2l16 16M18 2L2 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="gallery-nav gallery-prev" id="galleryPrev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="gallery-nav gallery-next" id="galleryNext">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="gallery-content">
+            <img src="" alt="" class="gallery-image" id="galleryImage">
+        </div>
+        <div class="gallery-counter" id="galleryCounter"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
