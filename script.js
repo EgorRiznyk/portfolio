@@ -125,29 +125,6 @@ document.querySelectorAll('.about-tab-btn').forEach(btn => {
     });
 });
 
-const menuBtn = document.getElementById('menuBtn');
-const sideMenu = document.getElementById('sideMenu');
-const menuOverlay = document.getElementById('menuOverlay');
-const closeBtn = document.getElementById('closeBtn');
-const menuLinks = document.querySelectorAll('.menu-link');
-
-function openMenu() {
-    sideMenu.classList.add('open');
-    menuOverlay.classList.add('open');
-    menuBtn.classList.add('open');
-}
-
-function closeMenu() {
-    sideMenu.classList.remove('open');
-    menuOverlay.classList.remove('open');
-    menuBtn.classList.remove('open');
-}
-
-menuBtn.addEventListener('click', openMenu);
-closeBtn.addEventListener('click', closeMenu);
-menuOverlay.addEventListener('click', closeMenu);
-menuLinks.forEach(link => link.addEventListener('click', closeMenu));
-
 // === Scroll Animations ===
 const observerOptions = {
     threshold: 0.1,
